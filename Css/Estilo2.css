@@ -1,0 +1,141 @@
+/*COLORES*/
+:root{
+    --primario:#9c27b0;
+    --primarioOscuro:#89119d;
+    --secundario:#ddce00;
+    --secundarioOscuro:rgb(233,287,2);
+    --blanco:#ffffff; 
+    --negro:#000;
+ 
+    --FontPrincipal:'Staatliches', sans-serif;
+ }
+ 
+ html {
+     font-size: 62.5%;
+     box-sizing: border-box;
+ }
+ 
+ *, *:before, *:after {
+     box-sizing: inherit;
+ }
+ 
+ /*GLOBALES*/
+ body{
+     font-size: 16px;
+     background-color: var(--primario);
+     line-height: 1.5;
+     width: 100%;
+     height: 100%;
+     margin: 0;
+     padding: 0;
+ }
+ p{
+     font-size: 1.8rem;
+     font-family: Arial, Helvetica, sans-serif;
+     color: var(--blanco);
+ }
+ a{
+     text-decoration: none;
+ }
+ img{
+     max-width: 100%;
+ }
+ .contenedor{
+     max-width: 100rem;
+     margin: 0 auto;
+ }
+ h1, h2, h3{
+     text-align: center;
+     color: var(--secundario);
+     font-family: var(--FontPrincipal);
+ }
+ h1{
+     font-size: 4rem;
+ }
+ h2{
+     font-size: 3.2rem;
+ }
+ h3{
+     font-size: 2.4rem;
+ }
+ 
+ /**HEADER**/
+ .head{
+     display: flex;
+     justify-content: center;
+ }
+ .head__logo{
+     margin: 1.5rem 0;
+ }
+ 
+ /**NAVEGADOR**/
+ .navegador{
+     background-color: var(--primarioOscuro);
+     padding: 2rem 0;
+     display: flex;
+     justify-content: center;
+     gap: 2rem;
+ }
+ .navegador__option{
+     color: var(--blanco);
+     font-size: 3rem;
+     font-family: var(--FontPrincipal);
+ }
+ .navegador__option--active,
+ .navegador__option:hover{
+     color: var(--secundario);
+ }
+
+ /**MAIN**/
+.grid{
+    display: grid;
+    grid-template-rows: repeat(2,auto);
+}
+ @media (min-width: 768px) {
+    .grid{
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 2rem;
+    }    
+ }
+ 
+ .grid__img{
+    grid-row: 1/2;
+ }
+
+ @media (min-width: 768px) {
+     .grid__img{
+        grid-column: 2/3;
+     }
+ }
+
+ /**CONFIBIALIDAD**/
+ .bloques{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+ }
+ @media (min-width: 768px) {
+    .bloques{
+        grid-template-columns: repeat(4,1fr);
+     } 
+ }
+ .bloque{
+    text-align: center;
+ }
+ .bloque__titulo{
+    margin: 0;
+ }
+ .bloque__img{
+    width: 100%;
+ }
+ /**FOOTER**/
+ .footer{
+     background-color: var(--primarioOscuro);
+     padding: 1rem 0;
+     margin-top: 2rem;
+ }
+ .footer__parr{
+     text-align: center;
+     font-family: var(--FontPrincipal);
+     font-size: 2.2rem;
+ }

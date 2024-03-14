@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--NORMALIZE-->
+        <link rel="preload" href="Css/Normalize.css" as="style">
+        <link href="Css/Normalize.css" rel="stylesheet"> 
+    <!--GOOGLE FONTS-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <!--ESTILO CSS-->
+        <link rel="preload" href="Css/Estilo3.css" as="style">
+        <link href="Css/Estilo3.css" rel="stylesheet">
+    <title>Proyecto 02</title>
+</head>
+<body>
+
+    <header class="head">
+        <a href="index.html">
+            <img class="head__logo" src="img/logo.png" alt="logo tienda">
+        </a>
+    </header>
+
+    <nav class="navegador">
+        <a class="navegador__option navegador__option--active " href="index.html">Tienda</a>
+        <a class="navegador__option " href="Nosotros.html">Nosotros</a>
+    </nav>
+    <main class="contenedor">
+        <h1>React JS</h1>
+        <div class="grid">
+            <img class="grid__img" src="img/3.jpg" alt="camisa">
+            <div class="grid__informacion">
+                <p>Impedit odio consequatur reprehenderit quod alias vero laborum.
+                Itaque esse earum, placeat quo voluptatum, facere odit animi enim laborum aliquid omnis nihil quae aliquam eligendi autem iusto cumque velit. Obcaecati eum dignissimos praesentium culpa dolore adipisci omnis esse?
+                Voluptate eligendi ut voluptas blanditiis aliquid corporis quisquam, cupiditate aliquam vitae. 
+                </p>
+                <form class="formulario">
+                    <select class="formulario__campo">
+                        <option disabled selected value="#">Seleccionar tamaño</option>
+                        <option value="#">Chica</option>
+                        <option value="#">Mediana</option>
+                        <option value="#">Grande</option>
+                    </select>
+                    <input class="formulario__campo" type="number" min="1">
+                    <input class="formulario__submit" type="submit" value="Agregar al Carrito">
+                </form>
+            </div>
+        </div>
+    </main>
+   
+    <footer class="footer">
+        <p class="footer__parr">Front-End Store -Todos los derechos reservados 2024.</p>
+    </footer>    
+</body>
+</html>
